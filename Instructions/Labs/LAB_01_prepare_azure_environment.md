@@ -40,7 +40,7 @@ En este ejercicio, implementarás y configurarás una máquina virtual de Window
 1. En la página **Máquinas virtuales**, selecciona **Crear** y luego **Máquina virtual de Azure**.
 1. En la página **Datos básicos** del asistente para crear una máquina virtual, selecciona los siguientes valores y luego elige **Revisar y crear**.
 
-    | Propiedad | Valor    |
+    | Propiedad | Value    |
     |:---------|:---------|
     | Suscripción  | Su suscripción   |
     | Grupo de recursos    | rg-alpha  |
@@ -50,7 +50,7 @@ En este ejercicio, implementarás y configurarás una máquina virtual de Window
     | Tipo de seguridad | Estándar   |
     | Imagen | Windows Server 2022 Datacenter: Azure Edition – x64 Gen2  |
     | Arquitectura VM   | x64  |
-    | Size  | Standard_D4s_v3 – 4 vCPU, 16 GiB de memoria  |
+    | Tamaño  | Standard_D4s_v3 – 4 vCPU, 16 GiB de memoria  |
     | Cuenta de administrador | prime  |
     | Contraseña  | [Seleccionar una contraseña segura única] P@ssw0rdP@ssw0rd   |
     | Puertos de entrada | RDP 3389   |
@@ -68,11 +68,11 @@ En este ejercicio, implementarás y configurarás una máquina virtual de Window
 
     | Propiedad | Valor    |
     |:---------|:---------|
-    | Source  | Cualquiera  |
-    | Source port ranges    | *   |
-    | Destination  | Any   |
+    | Origen  | Cualquiera  |
+    | Intervalos de puertos de origen    | *   |
+    | Destino  | Any   |
     | Servicio   | HTTP  |
-    | Acción    | Permitir  |
+    | Action    | Permitir  |
     | Prioridad  | 310   |
     | Nombre  | AllowAnyHTTPInbound  |
 
@@ -98,7 +98,7 @@ En este ejercicio, crearás y configurarás una máquina virtual de Linux.
 1. En la página **Máquinas virtuales**, selecciona **Crear** y luego **Máquina virtual de Azure**.
 1. En la página **Datos básicos** del asistente para crear una máquina virtual, selecciona los siguientes valores y luego elige **Revisar y crear**.
 
-    | Propiedad | Valor    |
+    | Propiedad | Value    |
     |:---------|:---------|
     | Suscripción  | Su suscripción   |
     | Grupo de recursos    | rg-alpha  |
@@ -108,7 +108,7 @@ En este ejercicio, crearás y configurarás una máquina virtual de Linux.
     | Tipo de seguridad | Estándar   |
     | Imagen | Ubuntu Server 20.04 LTS – x64 Gen2  |
     | Arquitectura VM   | x64  |
-    | Size  | Standard_D2s_v3 – 2 vCPU, 8 GiB de memoria  |
+    | Tamaño  | Standard_D2s_v3 – 2 vCPU, 8 GiB de memoria  |
     | Tipo de autenticación   | Contraseña  |
     | Nombre de usuario  | Prime   |
     | Contraseña  | [Seleccionar una contraseña segura única] P@ssw0rdP@ssw0rd   |
@@ -116,21 +116,23 @@ En este ejercicio, crearás y configurarás una máquina virtual de Linux.
 
 4. Revisa la información y elige **Crear**.
 1. Una vez implementada la máquina virtual, abre la página **Propiedades de VM** y elige **Extensiones y aplicaciones** en **Configuración**.
-1. Elige **Agregar** y selecciona el **Agente de Network Watcher para Linux**. Elige **Siguiente** y luego **Revisar y crear**. Elija **Crear**.
-1. Configura la extensión AzureNetworkWatcherExtension y OmsAgentForLinux para que se actualicen automáticamente.
+1. Elige **Agregar** y selecciona el **Agente de Network Watcher para Linux**. Elige **Siguiente** y luego **Revisar y crear**. Seleccione **Crear**.
+
+> [!NOTE]
+> La instalación y configuración de la extensión OmsAgentForLinux se realizará en el ejercicio 2 después de crear el área de trabajo de Log Analytics.
 
 
 ## Implementación de una aplicación web con una instancia de SQL Database
 
 1. Asegúrate de que sigues con la sesión iniciada en Azure Portal.
-1. Abre una nueva pestaña en el explorador y navega hasta https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/web-app-sql-database
+1. Abre una nueva pestaña en el explorador y ve a https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/web-app-sql-database
 1. En la página de GitHub, elige **Implementar en Azure**.
 1. Se abrirá una nueva pestaña. Si fuera necesario, vuelve a iniciar sesión en Azure con la cuenta que tenga privilegios de administrador global.
 1. En la página **Datos básicos**, selecciona **Editar plantilla**.
 1. En el editor de la plantilla, elimina el contenido de las líneas 158 a 174, ambas inclusive, y elimina la "," en la línea 157. Elija **Guardar**.
 1. En la página **Datos básicos**, proporciona la información siguiente y elige **Siguiente**.
 
-    | Propiedad | Valor    |
+    | Propiedad | Value    |
     |:---------|:---------|
     | Suscripción  | Su suscripción   |
     | Grupo de recursos    | rg-alpha  |
@@ -150,7 +152,7 @@ En este ejercicio, crearás y configurarás una máquina virtual de Linux.
 1. En la página de GitHub, elige **Implementar en Azure**.
 1. En la página **Datos básicos**, proporciona la información siguiente y elige **Siguiente**.
 
-    | Propiedad | Valor    |
+    | Propiedad | Value    |
     |:---------|:---------|
     | Suscripción  | Su suscripción   |
     | Grupo de recursos    | rg-alpha  |
