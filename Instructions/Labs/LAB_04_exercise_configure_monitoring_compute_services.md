@@ -23,7 +23,7 @@ lab:
     | Propiedad | Valor    |
     |:---------|:---------|
     | El nombre del punto de conexión  | IaaSVMCollectionEndpoint   |
-    | Subscription  | Su suscripción  |
+    | Suscripción  | Su suscripción  |
     | Grupo de recursos    | rg-alpha  |
     | Region    | Este de EE. UU.  |
 
@@ -39,7 +39,7 @@ lab:
     | Propiedad | Valor    |
     |:---------|:---------|
     | Nombre de la regla  | WinVMDCR   |
-    | Subscription  | Su suscripción   |
+    | Suscripción  | Su suscripción   |
     | Grupo de recursos    | rg-alpha  |
     | Region    | Este de EE. UU.  |
     | Tipo de plataforma | Windows  |
@@ -50,13 +50,13 @@ lab:
 1. En la página **Crear regla de recopilación de datos**, elige **Siguiente**.
 1. En la pestaña **Recopilar y entregar**, elige **Agregar origen de datos**.
 1. En la página **Agregar origen de datos**, selecciona **Registros de eventos de Windows**. En la categoría **Aplicación**, activa las categorías **Crítico** y **Error**. En la categoría **Seguridad**, elige la categoría **Error de auditoría**. En la categoría **Sistema**, activa las categorías **Crítico** y **Error**. 
-1. Elija **Siguiente**.
+1. Seleccione **Siguiente**.
 1. En la página **Destino**, configura estos valores:
 
     | Propiedad | Valor    |
     |:---------|:---------|
     | Tipo de destino  | Registros de Azure Monitor   |
-    | Subscription  | Su suscripción   |
+    | Suscripción  | Su suscripción   |
     | Cuenta o espacio de nombres  | LogAnalytics1  |
 
 12. Elige **Agregar origen de datos**.
@@ -71,13 +71,13 @@ lab:
 1. En **Configuración**, elige **Orígenes de datos**.
 1. En la página **Orígenes de datos**, elige **Agregar**.
 1. En la página **Agregar origen de datos**, selecciona **Registros de IIS**.
-1. Elija **Siguiente**.
+1. Seleccione **Siguiente**.
 1. En la página **Destino**, configura estos valores:
 
     | Propiedad | Valor    |
     |:---------|:---------|
     | Tipo de destino  | Registros de Azure Monitor   |
-    | Subscription  | Su suscripción   |
+    | Suscripción  | Su suscripción   |
     | Cuenta o espacio de nombres  | LogAnalytics1  |
 
 9. Elige **Agregar origen de datos**.
@@ -92,8 +92,8 @@ lab:
     | Propiedad | Valor    |
     |:---------|:---------|
     | Nombre del monitor de conexión  | LinuxVMPubIP   |
-    | Subscription  | Su suscripción   |
-    | Region    | Este de EE. UU.  |
+    | Suscripción  | Su suscripción   |
+    | Region    | Este de EE. UU. 2 |
     | Área de trabajo | LogAnalytics1  |
 
 5. En la página **Agregar detalles del grupo de pruebas**, escribe el nombre **LinuxIPTest** y elige **Agregar orígenes**.
